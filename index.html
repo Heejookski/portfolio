@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>희주의 포트폴리오</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@2.0/nanumsquare.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'NanumSquare', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        header {
+            background-color: #5D4037;
+            background-image: linear-gradient(135deg, #5D4037 0%, #795548 100%);
+            color: white;
+            text-align: center;
+            padding: 50px 0;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+        }
+
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: 
+                radial-gradient(circle at 20% 20%, rgba(255,255,255,0.05) 0%, transparent 50%),
+                radial-gradient(circle at 80% 80%, rgba(255,255,255,0.05) 0%, transparent 50%);
+            z-index: 1;
+        }
+
+        header * {
+            position: relative;
+            z-index: 2;
+        }
+
+        .profile-img {
+            width: 150px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        section {
+            margin: 40px 0;
+        }
+
+        h1 {
+            font-size: 2.8em;
+            font-family: 'NanumSquare', sans-serif;
+            font-weight: 800;
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+            color: #fcfaf9;
+        }
+
+        h2 {
+            font-size: 2em;
+            font-family: 'NanumSquare', sans-serif;
+            font-weight: 700;
+            margin-top: 30px;
+            margin-bottom: 20px;
+            padding: 15px 20px;
+            background: linear-gradient(135deg, #8D6E63 0%, #A1887F 100%);
+            color: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        h2 i {
+            font-size: 1.5em;
+        }
+
+        h2::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: 
+                radial-gradient(circle at 20% 50%, rgba(255,255,255,0.1) 0%, transparent 50%);
+            z-index: 1;
+        }
+
+        h2 span {
+            position: relative;
+            z-index: 2;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skill-tag {
+            background-color: #795548;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            transition: background-color 0.3s;
+        }
+
+        .skill-tag:hover {
+            background-color: #5D4037;
+        }
+
+        .project {
+            border: 1px solid #e0e0e0;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+            transition: box-shadow 0.3s;
+        }
+
+        .project:hover {
+            box-shadow: 0 2px 10px rgba(93,64,55,0.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="Photo.jpg" alt="프로필 사진" class="profile-img">
+        <h1>조희주</h1>
+        <p>선임연구원 | 프로세스 연구원</p>
+    </header>
+
+    <div class="container">
+        <section>
+            <h2><i class="fas fa-user"></i><span>소개</span></h2>
+            <p>안녕하세요! 저는 한화오션 함정체계연구팀 조희주 선임연구원입니다.  
+               저는 함 연료전지 시스템 프로세스 연구개발 업무를 담당하고 있습니다.</p>
+        </section>
+
+        <section>
+            <h2><i class="fas fa-tools"></i><span>기술 스택</span></h2>
+            <div class="skills">
+                <span class="skill-tag"> ASPEN HYSYS Steady State Modeling </span>
+                <span class="skill-tag"> ASPEN HYSYS Dynamic State Modeling </span>
+                <span class="skill-tag"> ASPEN HEAT EXCHANGER DESIGN AND RATING </span>
+                <span class="skill-tag"> ASPEN ADSORPTION </span>
+            </div>
+        </section>
+
+        <section>
+            <h2><i class="fas fa-project-diagram"></i><span>프로젝트</span></h2>
+            <div class="project">
+                <h3>Hydro cyclone을 이용한 Oil/Water Separator와 공정변수의 상관관계 연구</h3>
+                <p>실험을 통한 공정변수(온도, 압력, 유량, PDR)에 따른 분리효율 도출</p>
+                <h3>IMO의 황산화물 규제를 극복하기 위한 110kW급 Predictive Control을 활용한 저유황유의 냉각 공급 장치 개발</h3>
+                <p>엔진 로드 변화 시 제어 기법(PI, Cascade, MPC)에 따른 MGO 온도 동특성 분석</p>
+                <h3>잠수함용 개질형 연료전지 시스템 적용을 위한 해수 이용 CO2 처리 시스템 개념 연구개발</h3>
+                <p>실험을 통한 공정변수(압력, 온도, 체류 시간, 버블 크기, 난류의 강도)에 따른 CO2 물질 전달 성능 연구</p>
+                <h3>잠수함 연료전지용 메탄올 수증기 개질 플랜트 Dynamic Simulation</h3>
+                <p>개질기 운전 절차 및 부하 변경에 따른 Control verification & Sequence verification</p>
+                <h3>수소추진선박 벙커링 및 수소운반선박 적하역 안전기준 개발</h3>
+                <p>수소 제조, 이송, 적하역 관련 코드(IGC, IGF) 조사</p>
+            </div>
+        </section>
+
+        <section>
+            <h2><i class="fas fa-briefcase"></i><span>경력</span></h2>
+            <div class="project">
+                <h3>한화오션 (2021-현재)</h3>
+                <p>함정체계연구팀 재직</p>
+                <p>함정추진체계 공정 연구/개발 업무 담당</p>
+            </div>
+        </section>
+
+        <section>
+            <h2><i class="fas fa-envelope"></i><span>연락처</span></h2>
+            <p>이메일: aprilheejoo@gmail.com</p>
+            <p>전화번호: 010-2566-5943</p>
+        </section>
+    </div>
+</body>
+</html>
